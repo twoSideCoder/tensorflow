@@ -1,6 +1,6 @@
 #ADMlNxd lec
 LAST_ERROR = ""
-SERVER = "http://nitp.ac.in"
+SERVER = "http://nitp.ac.in/#"
 for k in range(1000):
   STATUS_CODE = 100 
   try:
